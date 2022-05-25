@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #222;
+    background: #fff;
+}
+
+img {
+    max-width: 20rem;
+    max-height: 20rem;
+
+}
+
+
+.card-body-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* .card-body-img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.934);
+} */
+
+
+.tipox {
+    display: flex;
+    gap: 1rem;
+}
+
+#tipo {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}
+#roto {
+    color: rgb(255, 0, 0);
+}
+
+#tipo1{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#tipo2{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-body {
+    margin: 0 auto;
+    padding: 0rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    margin: 5rem auto;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.803);
+    max-width: 50rem;
+    text-align: center;
+    font-family: arial;
+
+}
+
+.card-hab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin: 1rem auto; */
+
+    align-items: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: .5rem;
+}
+
