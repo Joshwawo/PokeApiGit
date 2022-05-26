@@ -32,8 +32,13 @@ const fethData = async (id) => {
         const pokemon = {
             img: data.sprites.other.dream_world.front_default,
             nombre: data.name,
+            id:data.id,
             hp: data.stats[0].base_stat,
             atk: data.stats[1].base_stat,
+            defense: data.stats[2].base_stat,
+            spacial_atk: data.stats[3].base_stat,
+            spacial_defense: data.stats[4].base_stat,
+            speed: data.stats[5].base_stat,
             tipo1: data.types[0].type.name,
             tipo2: '',
             ataque1: data.abilities[0].ability.name,
@@ -41,10 +46,12 @@ const fethData = async (id) => {
             ataque2: '',
             ataque3: '',
         }
+        // console.log(data.stats)
+        console.log(id)
 
 
 
-        console.log(data.stats[1].base_stat)
+        // console.log(data.stats[1].base_stat)
 
         if (data.types[1] != null) {
             pokemon.tipo2 = data.types[1].type.name
@@ -321,14 +328,17 @@ const pintarCard = (pokemon) => {
     clone.getElementById('hb1').innerHTML = `${pokemon.ataque1}`;
     clone.getElementById('hb2').innerHTML = `${pokemon.ataque2}`;
     clone.getElementById('hb3').innerHTML = `${pokemon.ataque3}`;
-    clone.getElementById('hb4').innerHTML = `attack:  ${pokemon.atk}`
-    // clone.getElementById('ataque').innerHTML = `${pokemon.ataque}`
+    clone.getElementById('hb4').innerHTML = `Attack: ${pokemon.atk}`;
+    clone.getElementById('hb5').innerHTML = `Defense: ${pokemon.defense}`;
+    clone.getElementById('hb6').innerHTML = `special-attack: ${pokemon.defense}`;
+    clone.getElementById('hb7').innerHTML = `special-defense: ${pokemon.spacial_defense}`;
+    clone.getElementById('hb8').innerHTML = `speed: ${pokemon.speed}`;
+    // clone.getElementById('no-id').innerHTML = ` ${pokemon.id}`;
 
-    // clone.classList.add('testo')
 
+    clone.getElementById('no-id').innerHTML = `No: ${pokemon.id}`;
 
-    // clone.querySelector('.card-footer-social') =`${pokemon.ataque1}`;
-    // clone.querySelector('.card-body-text').innerHTML= `${}`
+    
     fragment.appendChild(clone);
     flex.appendChild(fragment);
 

@@ -108,6 +108,66 @@ h3{
     margin: .5rem;
 }
 
+/* #hb4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: .5rem;
+} */
+
+.hbs{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: .5rem;
+    text-decoration: upperCase;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .normal{
     background-color: gray;
     border-radius: 1rem;
