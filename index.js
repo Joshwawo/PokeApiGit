@@ -7,7 +7,7 @@ function getRandomId(min, max) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const random = getRandomId(1, 151);
+    const random = getRandomId(1, 800);
     fethData(random);
 
     // const hd = document.querySelector('#tipo');
@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const fethData = async (id) => {
+
+
 
 
 
@@ -32,7 +34,7 @@ const fethData = async (id) => {
         const pokemon = {
             img: data.sprites.other.dream_world.front_default,
             nombre: data.name,
-            id:data.id,
+            id: data.id,
             hp: data.stats[0].base_stat,
             atk: data.stats[1].base_stat,
             defense: data.stats[2].base_stat,
@@ -48,6 +50,13 @@ const fethData = async (id) => {
         }
         // console.log(data.stats)
         console.log(id)
+
+        if (data.sprites.other.dream_world.front_default == null) {
+            console.log('No tengo SVG')
+            // data.sprites.other.official.artwork.front_default
+            let svg = data.sprites.other["official-artwork"].front_default
+            // sprites.other["official-artwork"]
+        }
 
 
 
@@ -298,6 +307,11 @@ const fethData = async (id) => {
         pintarCard(pokemon);
         comparadorTipos();
 
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            location.reload();
+        })
+
 
         //TODO:Esto me puede servir mas adelanmte if (data.abilities[0].ability.name == 'rock-head') {
         //     console.log('hola soy de tipo stench')
@@ -313,6 +327,10 @@ const fethData = async (id) => {
 }
 
 const pintarCard = (pokemon) => {
+    // let btn = document.getElementById('btn');
+    // btn.addEventListener('click', () => {
+    //     location.reload();
+    // })
     // console.log(pokemon)
     const flex = document.querySelector('.flex');
     const template = document.getElementById('template-card').content
@@ -338,7 +356,8 @@ const pintarCard = (pokemon) => {
 
     clone.getElementById('no-id').innerHTML = `No: ${pokemon.id}`;
 
-    
+
+
     fragment.appendChild(clone);
     flex.appendChild(fragment);
 
