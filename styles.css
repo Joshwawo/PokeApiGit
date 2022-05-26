@@ -12,7 +12,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     color: #222;
-    background: #fff;
+    background: rgb(249, 249, 249);
 }
 
 img {
@@ -79,6 +79,7 @@ img {
     max-width: 50rem;
     text-align: center;
     font-family: arial;
+    background-color: rgba(3, 53, 2, 0.688);
 
 }
 
@@ -107,3 +108,69 @@ h3{
     margin: .5rem;
 }
 
+.normal{
+    background-color: gray;
+}
+
+.fire{
+    background-color: rgb(255, 77, 0);
+}
+
+.water{
+    background-color: blue;
+}
+
+.grass{
+    background-color: green;
+}
+.electric{
+    background-color: yellow;
+}
+.ice{
+    background-color: aqua;
+}
+.fighting{
+    background-color: rgb(148, 20, 20);
+}
+.poison{
+    background-color: purple;
+}
+.ground{
+    background-color: brown;
+}
+.flying{
+    background-color: rgb(90, 90, 216);
+}
+
+.psychic{
+    background-color: rgb(255, 0, 255);
+}
+
+.bug{
+    background-color: rgb(0, 255, 0);
+}
+
+.ghost{
+    background-color: rgb(0, 0, 255);
+}
+
+.dark{
+    background-color: rgb(0, 0, 0);
+}
+
+.dragon{
+    background-color: rgb(233, 206, 206);
+}
+
+.steel{
+    background-color: rgb(97, 91, 91);
+}
+
+.fairy{
+    background-color: rgb(255, 204, 204);
+}
+
+.rock{
+    /* background-color: rgb(216, 216, 216); */
+    background-color: brown;
+}
