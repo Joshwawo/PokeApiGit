@@ -12,13 +12,38 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     color: #222;
-    background: rgb(249, 249, 249);
+    background: rgb(33, 31, 31);
 }
 
-img {
+.pruebaimg {
     max-width: 20rem;
     max-height: 20rem;
+    text-align: center;
 
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    /* z-index: -1; */
+}
+
+/* .pruebaimg{
+    position: relative;
+} */
+
+.prueba8{
+    position: absolute;
+    top: 0;
+    
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.561);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* width: 100%; */
+    
+    
+    
 }
 
 
@@ -46,17 +71,18 @@ img {
 
 
 }
+
 #roto {
     color: rgb(255, 0, 0);
 }
 
-#tipo1{
+#tipo1 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-weight: bold;
 }
 
-#tipo2{
+#tipo2 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-weight: bold;
@@ -79,11 +105,19 @@ img {
     max-width: 50rem;
     text-align: center;
     font-family: arial;
-    background-color: rgba(3, 53, 2, 0.688);
+    background-color: rgb(241, 241, 241);
+    border-radius: 1rem;
 
 }
 
-.card-hab{
+
+
+
+
+
+
+
+.card-hab {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -100,7 +134,7 @@ img {
     padding: 0;
 }
 
-h3{
+h3 {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -116,7 +150,7 @@ h3{
     margin: .5rem;
 } */
 
-.hbs{
+.hbs {
     font-size: 1.4rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -125,7 +159,8 @@ h3{
     text-decoration: upperCase;
     text-align: center;
 }
-#btn{
+
+#btn {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border-radius: 1rem;
@@ -136,7 +171,11 @@ h3{
     text-align: center;
     margin: .5rem;
     cursor: pointer;
-    
+
+}
+
+.text-a {
+    text-align: end;
 }
 
 
@@ -180,128 +219,219 @@ h3{
 
 
 
-
-.normal{
+.normal {
     background-color: gray;
     border-radius: 1rem;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 
 }
 
-.fire{
+.fire {
     background-color: rgb(255, 77, 0);
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
 
-.water{
-    background-color: blue;
+.water {
+    background-color: #5e98ff;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
 
-.grass{
-    background-color: green;
+.grass {
+    background-color: #90E091;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
-.electric{
+
+.electric {
     background-color: yellow;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
-.ice{
+
+.ice {
     background-color: aqua;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
-.fighting{
-    background-color: rgb(148, 20, 20);
+
+.fighting {
+    background-color: #c03028;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
-.poison{
+
+.poison {
     background-color: purple;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
-}
-.ground{
-    background-color: brown;
-    border-radius: 1rem;
-    margin:  auto;
-    padding: .4rem;
-}
-.flying{
-    background-color: rgb(90, 90, 216);
-    border-radius: 1rem;
-    margin:  auto;
-    padding: .4rem;
+    cursor: pointer;
 }
 
-.psychic{
+.ground {
+    background-color: #E0C068;
+    border-radius: 1rem;
+    margin: auto;
+    padding: .4rem;
+    cursor: pointer;
+}
+
+.flying {
+    background-color: #a890f0;
+    border-radius: 1rem;
+    margin: auto;
+    padding: .4rem;
+    cursor: pointer;
+}
+
+.psychic {
     background-color: rgb(255, 0, 255);
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
 
-.bug{
-    background-color: rgb(0, 255, 0);
+.bug {
+    background-color: #A8B820;
+
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
+    cursor: pointer;
 }
 
-.ghost{
-    background-color: rgb(0, 0, 255);
+.ghost {
+    background-color: #8f859f;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
 
-.dark{
-    background-color: rgb(0, 0, 0);
+.dark {
+    background-color: rgb(15, 14, 14);
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    color: white !important;
+    cursor: pointer;
 }
 
-.dragon{
+.dragon {
     background-color: rgb(233, 206, 206);
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
 
-.steel{
-    background-color: rgb(97, 91, 91);
+.steel {
+    background-color: #b8b8d0;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
 
-.fairy{
+.fairy {
     background-color: rgb(255, 204, 204);
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
+    cursor: pointer;
 }
 
-.rock{
+.rock {
 
-    background-color:#3F2212;
+    background-color: #807870;
     border-radius: 1rem;
-    margin:  auto;
+    margin: auto;
     padding: .4rem;
-   
+    cursor: pointer;
+
 
 }
+
+@media (min-width: 380px) {
+    .card {
+        margin: 5rem auto;
+        padding: 3rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.803);
+        max-width: 30rem;
+        text-align: center;
+        font-family: arial;
+        background-color: rgb(241, 241, 241);
+        border-radius: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        /* background-color: red; */
+
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        margin: 5rem auto;
+        padding: 3rem;
+        box-shadow: 0 4px 8px 0 rgba(182, 170, 163, 0.803);
+        max-width: 50rem;
+        text-align: center;
+        font-family: arial;
+        background-color: rgb(241, 241, 241);
+
+        border-radius: 1rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        /* background-color: red; */
+
+    }
+
+
+}
+
+
+
+
+
+/* .prueba8 {
+    background-color: rgb(221, 13, 13);
+    border-radius: 1rem;
+    margin: auto;
+    padding: .4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    
+    
+} */
+

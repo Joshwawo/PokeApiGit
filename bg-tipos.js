@@ -1,4 +1,4 @@
-const comparadorTipos = () => {
+comparadorTipos = () => {
     if (data.types[0].type.name == 'normal') {
         console.log(`Soy de tipo ${data.types[0].type.name} `)
         let normal = document.getElementById('tipo1');
@@ -15,7 +15,7 @@ const comparadorTipos = () => {
         console.log(`Soy un pokemon de tipo ${data.types[0].type.name}`)
         let water = document.getElementById('tipo1');
         water.classList.add('water');
-        
+
 
     }
 
@@ -133,6 +133,8 @@ const comparadorTipos = () => {
     if (data.types[1] != null && data.types[1].type.name == 'ice') {
         console.log(`Soy de tipo ${data.types[1].type.name}`)
     }
+
+    // onselectstart('as')
 
     if (data.types[1] != null && data.types[1].type.name == 'fighting') {
         console.log(`Soy de tipo ${data.types[1].type.name}`)
